@@ -7,15 +7,14 @@ form.addEventListener("submit",function(e){
     const email = document.getElementById("email").value; //formLesson.htmlから　email idのinputに入力された内容を取得する。//
     const message = document.getElementById("message").value;//formLesson.htmlから message idのinputに入力された内容を取得する。//
 
-    if(name === ""|| email === "" ||message === ""){ 
-        alert("すべて入力してください");  
+    if(name === ""|| email === "" ||message === ""){
         return;
-    }
+    }                                       //それぞれの入力がnullの場合にアラートを出す//
 
     console.log("送信データ");
-    console.log(name,email,message);
+    console.log(name,email,message);  //consoleに入直内容を出力する。//
 
-    alert("送信されました");
+    alert("送信されました");    //入力完了をユーザーにアラートする//
 
 
 
